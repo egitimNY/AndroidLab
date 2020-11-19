@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ReadStudentActivity">
+
+    <ImageView
+        android:id="@+id/read_student_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_student_small"
+        android:clickable="true"
+        android:maxHeight="150px"
+        android:maxWidth="150px"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:id="@+id/read_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/read_student_image"
+        android:text="aaa"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/read_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/read_student_image"
+        android:layout_marginTop="16dp"
+        android:autoLink="phone"
+        android:text="0000-0000" />
+
+    <TextView
+        android:id="@+id/read_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/read_student_image"
+        android:layout_marginTop="16dp"
+        android:autoLink="email"
+        android:text="aloalo@a.com"
+        />
+
+    <ListView
+        android:id="@+id/read_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/read_email"
+        android:layout_marginTop="16dp"
+        ></ListView>
+
+</RelativeLayout>
